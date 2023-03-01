@@ -10,7 +10,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-- [Proud of this](#proud-of-this-code)
+  - [Proud of this](#proud-of-this-code)
 - [Author](#author)
 
 ## Overview
