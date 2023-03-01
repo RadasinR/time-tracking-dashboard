@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 16px;
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+    }
+
+    .attribution a {
+      color: hsl(24, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+   
+    <article class="timeTracker">
+      <section class="profile round">
+        <section class="profile__header round p-1">
+          <img class="profile__pic" src="/images/image-jeremy.png" alt="of Jeremy Robson">
+          <div>
+            <p class="timeTracker__subtext">Report for</p>
+            <h2 class="profile__name">Jeremy Robson</h2>
+          </div>
+        </section>
+
+        <section class="flex-group-sb p-1">
+          <button class="btn" onclick="reload('daily')">Daily</button>
+          <button class="btn" onclick="reload('weekly')">Weekly</button>
+          <button class="btn" onclick="reload('monthly')">Monthly</button>
+        </section>
+      </section>
+
+      <section id="clone" class="data round hidden">
+        <div class="data__body round p-1">
+          <header class="flex-group-sb">
+            <h3 class="data__type"></h3>
+            <button class="btn" onclick="showMenu(this)"><img src="images/icon-ellipsis.svg" alt="change timeframe">
+              <section class="submenu flex-group-sb">
+                <p>
+                  <span onclick="change(this)">Daily</span>
+                  <span onclick="change(this)">Weekly</span>
+                  <span onclick="change(this)">Monthly</span>
+                </p>
+              </section>
+            </button>
+
+          </header>
+          <section class="flex-group-sb">
+            <h2 class="data__currentTime"></h2>
+            <p class="data__previous timeTracker__subtext"> </p>
+          </section>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Igor</a>.
+    </div>
+  </footer>
+</body>
+
+</html>
